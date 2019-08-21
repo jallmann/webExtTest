@@ -16,6 +16,7 @@ async function registerContentScript() {
   //     matchAboutBlank: true,
   //   });
   // }
+  console.log("Content script is registered for <all_urls>");
   return browser.contentScripts.register({
     js: [{ file: "content/content.js" }],
     matches: ["<all_urls>"],
@@ -25,4 +26,5 @@ async function registerContentScript() {
   });
 }
 
-registerContentScript();
+console.log("Background script is running. Starting to wait.")
+setTimeout(registerContentScript, 5000);
