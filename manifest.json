@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "testExtension",
+  "version": "1.0",
+
+  "description": "Provide test case for content script injection.",
+
+  "background": {
+    "scripts": ["background/background.js"]
+  },
+  
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "webNavigation",
+    "cookies",
+    "management",
+    "storage",
+    "alarms",
+    "downloads",
+    "tabs"
+  ]
+}
