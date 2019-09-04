@@ -2,7 +2,7 @@ console.log("Page script is starting to run.")
 window.addEventListener("load", main);
 
 function main() {
-  let title = document.querySelector("#title1");
   console.log("Page script main() is executed.");
-  title.innerHTML = "Nothing";
+  let title = document.querySelector("#title1");
+  title.innerHTML = "Page script executed last.";
 }
